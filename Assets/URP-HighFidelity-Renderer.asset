@@ -146,11 +146,11 @@ MonoBehaviour:
     material: {fileID: 2100000, guid: 22edaf53ae714064eaec5a1d18e3c19d, type: 2}
     renderPassEvent: 400
     color: {r: 1, g: 1, b: 1, a: 1}
-    boundsMin: {x: -75, y: -39.4, z: -11.4}
-    boundsMax: {x: 44.7, y: 13.11, z: 143.2}
+    boundsMin: {x: -300, y: -100, z: -50}
+    boundsMax: {x: 500, y: 100, z: 430.1}
     stepSize: 0.1
     tex3D: {fileID: 11700000, guid: e86ae2f6bc685f14b91abf07281cebe4, type: 3}
-    cloudScale: 0.018
+    cloudScale: 0.007
     cloudOffset: {x: 0, y: 0, z: 0}
     densityThreshold: 0.501
     densityMultiplier: 7.89
