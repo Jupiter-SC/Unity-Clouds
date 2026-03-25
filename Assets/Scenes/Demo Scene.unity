@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18263188, g: 0.22556442, b: 0.29101133, a: 1}
+  m_IndirectSpecularColor: {r: 0.18035649, g: 0.22580317, b: 0.30696586, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,178 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &29856075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 29856077}
+  - component: {fileID: 29856076}
+  m_Layer: 0
+  m_Name: Spline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &29856076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29856075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots:
+    - Position:
+        x: 0
+        y: -333
+        z: 559.88464
+      TangentIn:
+        x: -0
+        y: -0
+        z: -63.10642
+      TangentOut:
+        x: 0
+        y: 0
+        z: 63.10642
+      Rotation:
+        value:
+          x: -0.20310365
+          y: 0
+          z: -0
+          w: 0.9791572
+    - Position:
+        x: 0
+        y: -82
+        z: 1138.8846
+      TangentIn:
+        x: -0
+        y: -0
+        z: -179.44371
+      TangentOut:
+        x: 0
+        y: 0
+        z: 133.72354
+      Rotation:
+        value:
+          x: -0.22609533
+          y: 0.002043837
+          z: -0.00067033275
+          w: 0.97410274
+    - Position:
+        x: 3
+        y: 87
+        z: 1445.8846
+      TangentIn:
+        x: -0
+        y: -0
+        z: -117.45734
+      TangentOut:
+        x: 0
+        y: 0
+        z: 119.11099
+      Rotation:
+        value:
+          x: -0.2751682
+          y: 0.0017182558
+          z: 0.005788432
+          w: 0.96137714
+    - Position:
+        x: 0
+        y: 294
+        z: 1740.8846
+      TangentIn:
+        x: -0
+        y: -0
+        z: -108.94308
+      TangentOut:
+        x: 0
+        y: 0
+        z: 102.67983
+      Rotation:
+        value:
+          x: -0.12368597
+          y: -0.002247774
+          z: -0.00002950104
+          w: 0.9923189
+    - Position:
+        x: 0
+        y: 257
+        z: 2058.8848
+      TangentIn:
+        x: -0
+        y: -0
+        z: -32.01454
+      TangentOut:
+        x: 0
+        y: 0
+        z: 32.01454
+      Rotation:
+        value:
+          x: 0.057883296
+          y: 0
+          z: 0
+          w: 0.9983234
+    m_MetaData:
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
+--- !u!4 &29856077
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29856075}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -712.88464}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &222719298
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,10 +648,12 @@ GameObject:
   - component: {fileID: 528980803}
   - component: {fileID: 528980802}
   - component: {fileID: 528980801}
+  - component: {fileID: 528980805}
+  - component: {fileID: 528980806}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -594,13 +768,49 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528980800}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.37787428, y: -0, z: -0, w: 0.92585695}
-  m_LocalPosition: {x: 99.2, y: -188, z: -26}
+  m_LocalRotation: {x: -0.20310369, y: 0, z: 0, w: 0.97915727}
+  m_LocalPosition: {x: 0, y: -333, z: -153}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -44.404, y: 0, z: 0}
+--- !u!114 &528980805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528980800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a074d529cf945029ef7cf40540c9df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Target: {fileID: 29856076}
+  m_PlayOnAwake: 1
+  m_LoopMode: 1
+  m_Method: 0
+  m_Duration: 7
+  m_MaxSpeed: 476.366
+  m_EasingMode: 3
+  m_AlignmentMode: 1
+  m_ObjectForwardAxis: 2
+  m_ObjectUpAxis: 1
+  m_StartOffset: 0
+--- !u!114 &528980806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528980800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b7fccea8629b0443b74d397e675576a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  splineAnimate: {fileID: 528980805}
 --- !u!1 &679961002
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,6 +1081,7 @@ GameObject:
   - component: {fileID: 1709933779}
   - component: {fileID: 1709933778}
   - component: {fileID: 1709933777}
+  - component: {fileID: 1709933780}
   m_Layer: 0
   m_Name: Directional Light (1)
   m_TagString: Untagged
@@ -971,13 +1182,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709933776}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.116850786, y: -0.30265075, z: 0.23420009, w: 0.9164599}
+  m_LocalRotation: {x: 0.37893146, y: 0.29241836, z: -0.19521073, w: 0.85603464}
   m_LocalPosition: {x: -14.5, y: 21.1, z: -30.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 20.851, y: -32.347, z: 22.561}
+  m_LocalEulerAnglesHint: {x: 49.723, y: 33.063, z: -10.031}
+--- !u!114 &1709933780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709933776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324dc1ad6b0afab4889dbe969379dd06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  splineAnimate: {fileID: 528980805}
+  startRot: {x: 44, y: 182, z: 176}
+  endRot: {x: 46, y: 33, z: -10}
 --- !u!1001 &1793919047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1080,3 +1306,4 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1709933779}
   - {fileID: 222719299}
+  - {fileID: 29856077}

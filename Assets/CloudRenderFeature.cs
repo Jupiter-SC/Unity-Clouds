@@ -8,7 +8,7 @@ public class CloudRenderFeature : ScriptableRendererFeature
     /// Editing shader settings
     /// </summary>
     [System.Serializable]
-    public class Settings
+    public class CloudSettings
     {
         public Material material;
         public RenderPassEvent renderPassEvent = RenderPassEvent.AfterRenderingSkybox;
@@ -50,7 +50,7 @@ public class CloudRenderFeature : ScriptableRendererFeature
     /// </summary>
     class CloudPass : ScriptableRenderPass
     {
-        public Settings settings;
+        public CloudSettings settings;
         private RenderTargetIdentifier source;
         RenderTargetHandle tempTexture;
         private string profilerTag;
@@ -110,7 +110,7 @@ public class CloudRenderFeature : ScriptableRendererFeature
         }
     }
     
-    public Settings settings = new Settings();
+    public CloudSettings settings = new CloudSettings();
 
     private CloudPass pass;
 
