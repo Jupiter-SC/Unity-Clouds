@@ -57,6 +57,7 @@ Shader "Cloud"
             float _DensityThreshold, _DensityMultiplier;
             float _CloudScale;
             float3 _CloudOffset;
+            float _OffsetSpeed;
 
             // Lighting
             int _LightSteps;
@@ -109,7 +110,7 @@ Shader "Cloud"
             /// </summary>
             float sampleDensity(float3 samplePos)
             {
-                float3 uvw = samplePos * _CloudScale + _CloudOffset;
+                float3 uvw = samplePos * _CloudScale + (_CloudOffset * (_Time * _OffsetSpeed));
                 float4 noise = _3DTex.SampleLevel(sampler_3DTex, uvw.xyz, 0.0f);
                 float density = max(0, noise.r - _DensityThreshold) * _DensityMultiplier;
                 return density;

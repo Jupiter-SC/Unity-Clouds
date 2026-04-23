@@ -120,6 +120,7 @@ MonoBehaviour:
     tex3D: {fileID: 11700000, guid: 184df7f8b21b5d543b296618384aaf33, type: 3}
     cloudScale: 1
     cloudOffset: {x: 0, y: 0, z: 0}
+    offsetScrollingSpeed: 1
     densityThreshold: 0
     densityMultiplier: 1
     lightSteps: 16
@@ -146,18 +147,19 @@ MonoBehaviour:
     material: {fileID: 2100000, guid: 22edaf53ae714064eaec5a1d18e3c19d, type: 2}
     renderPassEvent: 400
     color: {r: 1, g: 1, b: 1, a: 1}
-    boundsMin: {x: -647.6, y: -100, z: -587.4}
-    boundsMax: {x: 808.2, y: 310.9, z: 2086.9}
+    boundsMin: {x: -1128.4, y: -100, z: -587.4}
+    boundsMax: {x: 866.52, y: 310.9, z: 2692.9}
     stepSize: 0.1
     tex3D: {fileID: 11700000, guid: e86ae2f6bc685f14b91abf07281cebe4, type: 3}
-    cloudScale: 0.003
-    cloudOffset: {x: 8.18, y: 0, z: 0}
-    densityThreshold: 0.501
-    densityMultiplier: 7.89
-    lightSteps: 16
+    cloudScale: 0.315
+    cloudOffset: {x: 1, y: 0.1, z: 1}
+    offsetScrollingSpeed: 0.1
+    densityThreshold: 0.534
+    densityMultiplier: 4
+    lightSteps: 8
     lightAbsToSun: 0.021
-    darkThresh: 0.061
+    darkThresh: 0.212
     phaseFactor: 1
-    forwardScatteringK: 0.839
+    forwardScatteringK: 0.865
     backwardScatteringK: 0.444
-    baseBrightness: 0.675
+    baseBrightness: 0.7

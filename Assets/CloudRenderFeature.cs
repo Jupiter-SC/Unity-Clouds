@@ -23,6 +23,7 @@ public class CloudRenderFeature : ScriptableRendererFeature
         
         [Range(0,1)] public float cloudScale = 1;
         public Vector3 cloudOffset = Vector3.zero;
+        [Range(0, 10)] public float offsetScrollingSpeed = 1;
         
         [Range(0,1)] public float densityThreshold = 0;
         [Min(0)] public float densityMultiplier = 1;
@@ -85,8 +86,9 @@ public class CloudRenderFeature : ScriptableRendererFeature
             settings.material.SetTexture("_3DTex", settings.tex3D);
             settings.material.SetFloat("_StepSize", settings.stepSize);
             
-            settings.material.SetFloat("_CloudScale", settings.cloudScale);
+            settings.material.SetFloat("_CloudScale", settings.cloudScale / 100f);
             settings.material.SetVector("_CloudOffset", settings.cloudOffset);
+            settings.material.SetFloat("_OffsetSpeed", settings.offsetScrollingSpeed);
             
             settings.material.SetFloat("_DensityThreshold", settings.densityThreshold);
             settings.material.SetFloat("_DensityMultiplier", settings.densityMultiplier);
