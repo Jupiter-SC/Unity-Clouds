@@ -147,7 +147,7 @@ MonoBehaviour:
     material: {fileID: 2100000, guid: 22edaf53ae714064eaec5a1d18e3c19d, type: 2}
     renderPassEvent: 400
     color: {r: 1, g: 1, b: 1, a: 1}
-    boundsMin: {x: -1000, y: 0, z: -300}
+    boundsMin: {x: -1000, y: 0, z: -200}
     boundsMax: {x: 1000, y: 200, z: 1000}
     stepSize: 0.1
     tex3D: {fileID: 11700000, guid: e86ae2f6bc685f14b91abf07281cebe4, type: 3}
